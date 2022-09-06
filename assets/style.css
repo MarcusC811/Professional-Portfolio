@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgb(36, 33, 33);
+}
+
+nav h1 {
+    font-size: xx-large;
+    background-color: aqua;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+nav a {
+    color: aqua;
+}
