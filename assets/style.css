@@ -84,13 +84,13 @@ nav a {
 h3 {
     color: hotpink;
 }
-
+/* Work card styling, adjusting sizes */
 #work-cards li {
     position: relative;
     height: 168px;
     margin: 20px;
 }
-
+/* adding background images to cards */
 #project-1 {
     background-image: url(./images/bigovo.jpg);
 }
@@ -106,29 +106,31 @@ h3 {
 #project-4 {
     background-image: url(./images/bigovo.jpg);
 }
-
+/* container height and width for work links */
 #link-work {
     height: 810px;
     width: -webkit-fill-available;
 }
-
-.card ul {
-    height: 550px;
-}
-
+/* positioning of work cards */
 #work-cards {
     width: 100%;
     margin-top: 25px;
 }
+/* work card header background color */
+h3 {
+    background-color: var(--main-nav-border-color);
+}
+/* work card header size */
 h3,
 h3 a {
-    width: 100%;
+    width: 15%;
     height: 100%;
     display: flex;
     align-items: end;
-    flex-direction: row-reverse;
+    padding-top: 110px;
 }
 
+/* CSS to make entire work card clickable */
 #work-cards a {
     position: absolute;
     top: 0;
