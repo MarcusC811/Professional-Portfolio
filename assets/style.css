@@ -32,7 +32,6 @@ nav a {
     height: 150px;
     position: relative;
     background-image: url(./images/bigovo.jpg);
-    background-repeat: no-repeat;
 }
 
 #sub-text {
@@ -40,6 +39,44 @@ nav a {
     bottom: 35px;
     right: 70px;
     background-color: var(--main-nav-border-color);
-    width: 200px;
+    width: 375px;
     height: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.card {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card h2 {
+    width: 450px;
+    background-color: red;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    font-size: 60px;
+}
+
+#aboutMe-p {
+    display: flex;
+    justify-content: left;
+    font-size: large;
+    background-color: red;
+}
+
+.flex-wrap,
+.flex-wrap-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.flex-wrap-header {
+    border-right: 5px solid blue;
 }
