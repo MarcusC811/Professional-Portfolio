@@ -1,10 +1,10 @@
 :root {
-    --main-nav-border-color: aqua;
+    --main-nav-border-color: rgb(255, 16, 38);
     --main-section-text-color: rgb(26, 65, 116);
 }
 /* section background */
 section {
-    background-color: darkslategrey;
+    color: black;
 }
 /* nav bar styling */
 nav {
@@ -20,6 +20,7 @@ nav {
     background-color: var(--main-nav-border-color);
     width: 570px;
 }
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -35,7 +36,8 @@ nav a {
 .subtitle {
     height: 150px;
     position: relative;
-    background-image: url(./images/bigovo.jpg);
+    background-image: url(./images/red.webp);
+    font-size: xx-large;
 }
 
 #sub-text {
@@ -67,7 +69,6 @@ nav a {
 /* card header styling */
 .card h2 {
     width: 450px;
-    background-color: red;
     display: flex;
     justify-content:right;
     align-items: center;
@@ -75,14 +76,13 @@ nav a {
 }
 /* border for right of the header */
 .flex-wrap-header {
-    border-right: 5px solid blue;
+    border-right: 5px solid black;
 }
 /* about me text */
 #aboutMe-p {
     display: flex;
     justify-content: left;
-    font-size: large;
-    background-color: red;
+    font-size: x-large;
 }
 /* container height and width for work links */
 #link-work {
@@ -91,7 +91,7 @@ nav a {
 }
 /* Titles to work */
 h3 {
-    color: hotpink;
+    color: rgb(244, 244, 247);
 }
 /* positioning of work cards */
 #work-cards {
@@ -111,6 +111,7 @@ h3 {
     margin: 20px;
     display: flex;
     flex-direction: column-reverse;
+    border: 6px solid rgb(106, 106, 109);
 }
 /* work card header size */
 h3 {
@@ -119,16 +120,17 @@ h3 {
     display: flex;
     align-items: end;
     padding-top: 110px;
-    background-color: var(--main-nav-border-color);
+    background-color: rgb(244, 244, 247);
+    color: black;
 }
 /* work card header background color */
 h3 {
-    background-color: var(--main-nav-border-color);
+    background-color: rgb(106, 106, 109);
 }
 
 #link-work a:hover {
-    color: rgba(15, 170, 28, 0.5);
-    box-shadow: 0 5px 15px rgba(52, 7, 83, 0.4);
+    color: black;
+    box-shadow: 0 5px 15px var(--main-nav-border-color);
 }
 /* CSS to make entire work card clickable */
 #work-cards a {
@@ -140,7 +142,7 @@ h3 {
 }
 /* adding background images to cards */
 #project-1 {
-    background-image: url(./images/bigovo.jpg);
+    background-image: url(./images/red.webp);
     background-repeat: cover;
     background-size: 100%;
 }
@@ -157,7 +159,7 @@ h3 {
 }
 /* continued background formating */
 #project-2 {
-    background-image: url(./images/coming.jpg);
+    background-image: url(./images/red.webp);
     background-repeat: cover;
     background-size: 100%;
     grid-column: 1;
@@ -165,7 +167,7 @@ h3 {
 }
 
 #project-3 {
-    background-image: url(./images/bigovo.jpg);
+    background-image: url(./images/red.webp);
     background-repeat: cover;
     background-size: 100%;
     grid-column: 2;
@@ -173,10 +175,80 @@ h3 {
 }
 
 #project-4 {
-    background-image: url(./images/bigovo.jpg);
+    background-image: url(./images/red.webp);
     background-repeat: cover;
     background-size: 100%;
     grid-column: 3;
     grid-row: 2;
 }
+/* Contact info styling */
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
 
+.contact-info a {
+    border-bottom: 5px solid rgb(106, 106, 109);
+    color: black;
+}
+
+@media screen and (max-width: 1375px) {
+    #aboutMe-p {
+        font-size: small;    
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #work-cards li {
+        height: 25%;
+    }
+    #grid {
+        display: block;
+    }
+
+    #grid li {
+        height: 30%;
+    }
+
+    .contact-info {
+        width: 35%;
+        display: inline-grid;
+        font-size: small;
+    }
+
+    .card h2 {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #aboutMe-p {
+        font-size: x-small;    
+    }
+
+    .nav-links {
+        width: 105px;
+        display: inline-grid;
+    }
+
+    #work-cards ul {
+        height: 95%;
+    }
+
+    #link-work {
+        height: 510px;
+        width: -webkit-fill-available;
+    }
+
+    #link-aboutMe {
+        height: 380px;
+    }
+
+    h3 {
+        background: none;
+    }
+}
