@@ -250,11 +250,18 @@ h3 {
 
     h3 {
         background: none;
+        color: white;
     }
 }
 
 @media screen and (max-width: 520px) {
     #aboutMe-p {
         font-size: small;    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #aboutMe-p {
+        font-size: xx-small;    
     }
 }
