@@ -2,6 +2,10 @@
     --main-nav-border-color: aqua;
     --main-section-text-color: rgb(26, 65, 116);
 }
+/* section background */
+section {
+    background-color: darkslategrey;
+}
 /* nav bar styling */
 nav {
     display: flex;
@@ -80,56 +84,52 @@ nav a {
     font-size: large;
     background-color: red;
 }
-/* Titles to work */
-h3 {
-    color: hotpink;
-}
-/* Work card styling, adjusting sizes */
-#work-cards li {
-    position: relative;
-    height: 168px;
-    margin: 20px;
-}
-/* adding background images to cards */
-#project-1 {
-    background-image: url(./images/bigovo.jpg);
-}
-
-#project-2 {
-    background-image: url(./images/bigovo.jpg);
-}
-
-#project-3 {
-    background-image: url(./images/bigovo.jpg);
-}
-
-#project-4 {
-    background-image: url(./images/bigovo.jpg);
-}
 /* container height and width for work links */
 #link-work {
     height: 810px;
     width: -webkit-fill-available;
 }
+/* Titles to work */
+h3 {
+    color: hotpink;
+}
 /* positioning of work cards */
 #work-cards {
     width: 100%;
     margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Width for work cards list */
+#work-cards ul {
+    width: 100%;
+}
+/* Work card styling, adjusting sizes */
+#work-cards li {
+    position: relative;
+    height: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* work card header size */
+h3 {
+    width: 15%;
+    height: 25%;
+    display: flex;
+    align-items: end;
+    padding-top: 110px;
+    background-color: var(--main-nav-border-color);
 }
 /* work card header background color */
 h3 {
     background-color: var(--main-nav-border-color);
 }
-/* work card header size */
-h3,
-h3 a {
-    width: 15%;
-    height: 100%;
-    display: flex;
-    align-items: end;
-    padding-top: 110px;
-}
 
+#link-work a:hover {
+    color: rgba(15, 170, 28, 0.5);
+    box-shadow: 0 5px 15px rgba(52, 7, 83, 0.4);
+}
 /* CSS to make entire work card clickable */
 #work-cards a {
     position: absolute;
@@ -138,3 +138,41 @@ h3 a {
     left: 0;
     right: 0;
 }
+/* adding background images to cards */
+#project-1 {
+    background-image: url(./images/bigovo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* grid formating */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0 100%;
+    height: 43%;
+  }
+/* continued background formating */
+#project-2 {
+    background-image: url(./images/bigovo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#project-3 {
+    background-image: url(./images/bigovo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#project-4 {
+    background-image: url(./images/bigovo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    grid-column: 3;
+    grid-row: 2;
+}
+
