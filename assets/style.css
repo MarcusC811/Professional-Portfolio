@@ -211,7 +211,7 @@ h3 {
     }
 
     #grid li {
-        height: 30%;
+        height: 35%;
     }
 
     .contact-info {
@@ -225,9 +225,9 @@ h3 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     #aboutMe-p {
-        font-size: x-small;    
+        font-size: medium;    
     }
 
     .nav-links {
@@ -250,5 +250,11 @@ h3 {
 
     h3 {
         background: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #aboutMe-p {
+        font-size: small;    
     }
 }
